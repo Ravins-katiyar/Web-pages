@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.main_box {
+    background: url(photo.jpg); /* Add Photo To Background */
+    height: 100vh;              /* extend Main box height to whole Page */
+    background-size: cover;     /* it Makes whole photo appear in background */ 
+}
+
+.btn_one i{
+    color: white;
+    font-weight: 700;    /* Used to make it bold */
+    font-size: 30px;     /* make it big */
+    position: absolute;  
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.1s linear;
+}
+
+.sidebar_menu {
+    position: fixed;
+    width:300px;
+    height: 100vh;
+    background-color:rgba(255,255,255,0.1);
+    box-shadow : 0 0 6px rgba(255,255,255,0.5);
+    left: -300px;
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu .logo {      /*It is used to decorate the logo class which comes inside sidebar_menu class */  
+    position: absolute;
+    line-height: 60px;
+    width:100%;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.5);
+    height: 55px;
+}
+
+.sidebar_menu .logo a{   /*used to decorate the the anchor tag which comes insie logo class and logo class which comes inside sidebar_menu class*/
+    position: absolute;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    left: 50px;
+}
+
+.sidebar_menu .btn_two i{
+    color: gray;
+    font-weight: 700;    /* Used to make it bold */
+    font-size: 25px;     /* make it big */
+    position: absolute;  
+    left: 275px;
+    line-height: 60px;
+    opacity: 0;          /* It is Used for Visivality */
+    transition: all 0.1s linear;
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    top: 80px;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 10px 20px;
+}
+
+.sidebar_menu .menu i,a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.sidebar_menu .menu i{   /* Here we make some distance between a(gallery) and i(sign of gallery) */
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media {
+    position:absolute;
+    left:25%;
+    bottom: 50px;
+}
+
+.sidebar_menu .social_media i {
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar_menu .menu li:hover {
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+}
+
+.btn_one i:hover {
+    font-size: 35px;
+}
+
+.btn_two i:hover {
+    font-size: 30px;
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked ~ .sidebar_menu{     /* Subsequent-sibling combinator */
+    left:0px;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
