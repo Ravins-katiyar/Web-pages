@@ -3,5 +3,6 @@ const student = {
     age:15,
     class:9,
     username:"karan@123",
-    password:"abcd"
+    password:"abcd",
+    location:"Mumbai"
 }
