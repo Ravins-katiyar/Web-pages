@@ -8,3 +8,4 @@ const student = {
 }
 let {username:user , password:pwd}=student;
 console.log(user,pwd)
+console.log(student.name)
