@@ -6,5 +6,5 @@ const student = {
     password:"abcd",
     location:"Mumbai"
 }
-let {username:use , password:pwd}=student;
+let {username:user , password:pwd}=student;
 console.log(user,pwd)
